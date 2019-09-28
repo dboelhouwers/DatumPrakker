@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatumPrakker", "DatumPrakker.csproj", "{D5EF9294-6856-44DD-AB2B-7F25BB44696B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ShareClientServer", "..\ShareClientServer\ShareClientServer.shproj", "{747976E8-22AF-46A1-BB13-8857D1793CE5}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\ShareClientServer\ShareClientServer.projitems*{747976e8-22af-46a1-bb13-8857d1793ce5}*SharedItemsImports = 13
+		..\ShareClientServer\ShareClientServer.projitems*{d5ef9294-6856-44dd-ab2b-7f25bb44696b}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5EF9294-6856-44DD-AB2B-7F25BB44696B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EF9294-6856-44DD-AB2B-7F25BB44696B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EF9294-6856-44DD-AB2B-7F25BB44696B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EF9294-6856-44DD-AB2B-7F25BB44696B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B0949CE-5C06-4D86-9B7C-7CEA2761D446}
+	EndGlobalSection
+EndGlobal
