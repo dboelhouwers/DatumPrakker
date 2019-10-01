@@ -1,0 +1,5 @@
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.exe.config
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.exe
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.pdb
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.exe
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.pdb

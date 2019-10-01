@@ -1,0 +1,11 @@
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.exe
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.deps.json
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.runtimeconfig.json
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.runtimeconfig.dev.json
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.dll
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.pdb
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.AssemblyInfoInputs.cache
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.AssemblyInfo.cs
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.dll
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.pdb
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.csprojAssemblyReference.cache

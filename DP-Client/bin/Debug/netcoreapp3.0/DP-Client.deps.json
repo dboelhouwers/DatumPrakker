@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DP-Client/1.0.0": {
+        "dependencies": {
+          "WPF-Client": "1.0.0"
+        },
+        "runtime": {
+          "DP-Client.dll": {}
+        }
+      },
+      "WPF-Client/1.0.0": {
+        "runtime": {
+          "WPFClient.exe": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DP-Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WPF-Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
