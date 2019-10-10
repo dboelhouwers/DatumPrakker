@@ -152,5 +152,6 @@ namespace WPFClient.Pages
             DPOptionsPage dpOptionsPage = new DPOptionsPage();
             NavigationService.Navigate(dpOptionsPage);
         }
+        //Gaat terug naar de vorige pagina
     }
 }

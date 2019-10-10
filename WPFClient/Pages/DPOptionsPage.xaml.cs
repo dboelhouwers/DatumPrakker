@@ -35,6 +35,7 @@ namespace WPFClient.Pages
             NavigationService.Navigate(dpCreatePage);
 
         }
+        //Gaat naar Create Page
 
         private void Button_Click_View(object sender, RoutedEventArgs e)
         {
@@ -44,6 +45,7 @@ namespace WPFClient.Pages
             NavigationService.Navigate(dpViewPage);
 
         }
+        //Gaat naar View Page
 
         private void Button_Click_FillIn(object sender, RoutedEventArgs e)
         {
@@ -52,6 +54,7 @@ namespace WPFClient.Pages
             DPFillinPage dpfillinPage = new DPFillinPage();
             NavigationService.Navigate(dpfillinPage);
         }
+        //Gaat naar Fill in Page
 
         private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
@@ -61,5 +64,6 @@ namespace WPFClient.Pages
 
 
         }
+        //Gaat terug naar de vorige pagina
     }
 }

@@ -34,13 +34,14 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("[DPFillinPage] Check Changed");
         }
-
+        //Checklist voor data
         private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Back");
             DPOptionsPage dpOptionsPage = new DPOptionsPage();
             NavigationService.Navigate(dpOptionsPage);
         }
+        //Gaat terug naar de vorige pagina
     }
 
 }

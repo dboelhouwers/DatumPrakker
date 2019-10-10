@@ -29,11 +29,13 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("Show who can join");
         }
+        // TODO geeft aan de hand van de geselecteerde datum de namen in een lijst rechts
         private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Back");
             DPOptionsPage dpOptionsPage = new DPOptionsPage();
             NavigationService.Navigate(dpOptionsPage);
         }
+        //Gaat terug naar de vorige pagina
     }
 }
