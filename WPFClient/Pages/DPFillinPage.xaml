@@ -38,7 +38,7 @@
             <StackPanel Orientation="Horizontal" Width="235">
                 <Label VerticalAlignment="Center" Content="Dates: " Width="75"/>
                 <StackPanel Margin="10">
-                    <CheckBox Name="Date1" >First date</CheckBox>
+                    <CheckBox Name="Date1" Checked="Date_Check_Handlr" Unchecked="Date_Check_Handlr" >First date</CheckBox>
                     <CheckBox Name="Date2" >Second date</CheckBox>
                 </StackPanel>
             </StackPanel>
