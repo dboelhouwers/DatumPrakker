@@ -9,6 +9,47 @@
       Title="DPFillinPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Fill in a DatumPrakker</Label>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="1" Height="35" Padding="5">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Center" Content="Room ID: " Width="75"/>
+                <Label Name="roomID" VerticalAlignment="Center" Width="160"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="2" Height="35" Padding="5">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Center" Content="Name: " Width="75"/>
+                <Label Name="nameTXTBox" VerticalAlignment="Center" Width="160"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="3" Height="auto" Padding="5" Width="500">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Center" Content="Dates: " Width="75"/>
+                <StackPanel Margin="10">
+                    <CheckBox Name="Date1" >First date</CheckBox>
+                    <CheckBox Name="Date2" >Second date</CheckBox>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="4"  Height="35" Width="235" Padding="5">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Button Width="225"
+                    Height="25" Click="Button_Click_Confirm" Margin="0,0,0,0.6">Confirm</Button>
+            </StackPanel>
+        </Border>
+
     </Grid>
 </Page>

@@ -26,23 +26,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LRSPC\\.nuget\\packages\\": {},
+    "C:\\Users\\marle\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\DP-Client\\DP-Client.csproj",
+      "projectUniqueName": "D:\\Aantekeningen TI J2 M1\\C#\\DatumPrakker\\DP-Client\\DP-Client.csproj",
       "projectName": "DP-Client",
-      "projectPath": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\DP-Client\\DP-Client.csproj",
-      "packagesPath": "C:\\Users\\LRSPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\DP-Client\\obj\\",
+      "projectPath": "D:\\Aantekeningen TI J2 M1\\C#\\DatumPrakker\\DP-Client\\DP-Client.csproj",
+      "packagesPath": "C:\\Users\\marle\\.nuget\\packages\\",
+      "outputPath": "D:\\Aantekeningen TI J2 M1\\C#\\DatumPrakker\\DP-Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LRSPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,8 +55,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj": {
-              "projectPath": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj"
+            "D:\\Aantekeningen TI J2 M1\\C#\\DatumPrakker\\WPFClient\\WPF-Client.csproj": {
+              "projectPath": "D:\\Aantekeningen TI J2 M1\\C#\\DatumPrakker\\WPFClient\\WPF-Client.csproj"
             }
           }
         }
@@ -70,21 +70,10 @@
     "frameworks": {
       "netcoreapp3.0": {
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

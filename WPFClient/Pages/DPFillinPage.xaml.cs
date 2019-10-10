@@ -24,5 +24,10 @@ namespace WPFClient.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click_Confirm(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("[DPFillinPage] Button Confirm Clicked");
+        }
     }
 }

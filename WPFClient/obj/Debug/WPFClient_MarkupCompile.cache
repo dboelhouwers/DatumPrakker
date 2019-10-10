@@ -4,15 +4,15 @@
 exe
 C#
 .cs
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\
 WPFClient
 none
 false
 DEBUG;TRACE
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\App.xaml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\App.xaml
 71521291113
 
-131033938768
+13-1364662956
 13-1505183044
 MainWindow.xaml;Pages\DPCreatePage.xaml;Pages\DPFillinPage.xaml;Pages\DPOptionsPage.xaml;Pages\DPViewPage.xaml;Pages\HomePage.xaml;Pages\TestPage2.xaml;
 

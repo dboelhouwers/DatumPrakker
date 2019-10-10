@@ -3,3 +3,10 @@ C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.pdb
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.exe
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.exe.config
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.exe
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\bin\Debug\DatumPrakker.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.csprojAssemblyReference.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.csproj.CoreCompileInputs.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.exe
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DatumPrakker\obj\Debug\DatumPrakker.pdb

@@ -40,13 +40,16 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("[DPOptionsPage] Button View Clicked");
 
+            
+
         }
 
         private void Button_Click_FillIn(object sender, RoutedEventArgs e)
         {
 
             Console.WriteLine("[DPOptionsPage] Button Fill in Clicked");
-
+            DPFillinPage dpfillinPage = new DPFillinPage();
+            NavigationService.Navigate(dpfillinPage);
         }
     }
 }
