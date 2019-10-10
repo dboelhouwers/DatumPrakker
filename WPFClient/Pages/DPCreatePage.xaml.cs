@@ -145,5 +145,10 @@ namespace WPFClient.Pages
         //        this.dateTime = dateTime;
         //    }
         //}
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+        }
     }
 }

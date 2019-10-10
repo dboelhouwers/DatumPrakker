@@ -20,6 +20,9 @@
         <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
             <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Fill in a DatumPrakker</Label>
         </Border>
+        <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5">
+            <Button Width="50" Height="25" Click="Button_Click_Back" HorizontalAlignment="Left" >Back</Button>
+        </Border>
 
         <Border Grid.Column="0" Grid.Row="1" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">

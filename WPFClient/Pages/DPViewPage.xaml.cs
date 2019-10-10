@@ -29,5 +29,9 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("Show who can join");
         }
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+        }
     }
 }

@@ -52,5 +52,10 @@ namespace WPFClient.Pages
             DPFillinPage dpfillinPage = new DPFillinPage();
             NavigationService.Navigate(dpfillinPage);
         }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+        }
     }
 }

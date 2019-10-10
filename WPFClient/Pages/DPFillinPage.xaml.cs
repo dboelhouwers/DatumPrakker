@@ -34,5 +34,11 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("[DPFillinPage] Check Changed");
         }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+        }
     }
+
 }
