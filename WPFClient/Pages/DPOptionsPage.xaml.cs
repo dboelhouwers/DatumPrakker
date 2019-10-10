@@ -56,6 +56,10 @@ namespace WPFClient.Pages
         private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Back");
+            HomePage homePage = new HomePage();
+            NavigationService.Navigate(homePage);
+
+
         }
     }
 }

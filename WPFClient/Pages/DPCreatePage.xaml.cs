@@ -149,6 +149,8 @@ namespace WPFClient.Pages
         private void Button_Click_Back(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Back");
+            DPOptionsPage dpOptionsPage = new DPOptionsPage();
+            NavigationService.Navigate(dpOptionsPage);
         }
     }
 }
