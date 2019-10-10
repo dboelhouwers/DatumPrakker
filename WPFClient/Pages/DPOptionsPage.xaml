@@ -18,7 +18,7 @@
 
         <!-- People list -->
         <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
-            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Options:</Label>
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Choose one of the following options</Label>
         </Border>
         <Border Grid.Column="0" Grid.Row="1" Height="35" Padding="5">
             <Button Width="125"

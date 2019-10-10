@@ -29,20 +29,23 @@ namespace WPFClient.Pages
         {
             //TestPage2 testPage2 = new TestPage2();
             //this.NavigationService.Navigate(testPage2);
-            Console.WriteLine("Button Create Clicked");
+            Console.WriteLine("[DPOptionsPage] Button Create Clicked");
+
+            DPCreatePage dpCreatePage = new DPCreatePage(this); 
+            NavigationService.Navigate(dpCreatePage);
 
         }
 
         private void Button_Click_View(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Button View Clicked");
+            Console.WriteLine("[DPOptionsPage] Button View Clicked");
 
         }
 
         private void Button_Click_FillIn(object sender, RoutedEventArgs e)
         {
 
-            Console.WriteLine("Button Fill in Clicked");
+            Console.WriteLine("[DPOptionsPage] Button Fill in Clicked");
 
         }
     }

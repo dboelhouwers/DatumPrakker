@@ -18,3 +18,9 @@ C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\WPF-Client.csprojAssemblyReference.cache
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPOptionsPage.g.cs
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPOptionsPage.baml
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPCreatePage.g.cs
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPFillinPage.g.cs
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPViewPage.g.cs
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPCreatePage.baml
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPFillinPage.baml
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\Pages\DPViewPage.baml

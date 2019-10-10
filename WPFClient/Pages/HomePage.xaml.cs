@@ -20,7 +20,7 @@ namespace WPFClient.Pages
     /// </summary>
     public partial class HomePage : Page
     {
-        private String username;
+        //private String username;
         public HomePage()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace WPFClient.Pages
 
         private void Button_Click_Next(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Button Next Clicked");
+            Console.WriteLine("[HomePage] Button Next Clicked");
             
             if (usernameTXTBox.Text.Equals(null) || usernameTXTBox.Text.Equals("") || usernameTXTBox.Text.Contains(" "))
             {
@@ -44,18 +44,17 @@ namespace WPFClient.Pages
             }
             else
             {
-                username = usernameTXTBox.Text;
+                //username = usernameTXTBox.Text;
+                MainWindow.username = usernameTXTBox.Text;
+                Console.Out.WriteLine($"username: {MainWindow.username}");
                 DPOptionsPage dpOptionsPage = new DPOptionsPage();
                 this.NavigationService.Navigate(dpOptionsPage);
             }
 
-
-
-
         }
     }
 }
-
+//wpf applicatie, change properties, output type to console. 
 //string bar = (a == null ? null : a.PropertyOfA);
 //if (bar != foo)
 //{
@@ -66,4 +65,12 @@ namespace WPFClient.Pages
 //{
 //    //somecode
 //}
+
+
+//IDevice selectedDevice = ((string)x).Contains("Tacx") ? new Devices.StationaryBike((string)x) : null;
+
+//Task.Run(async () =>
+//{
+//await SetupDevice(deviceName);
+//}).Wait();
 

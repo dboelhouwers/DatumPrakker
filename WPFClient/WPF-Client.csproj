@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{92881572-71D5-43BA-91A0-B1A2C1B428CC}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>WPFClient</RootNamespace>
     <AssemblyName>WPFClient</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -33,6 +33,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -67,7 +70,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\DPCreatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DPFillinPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DPOptionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DPViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,8 +96,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\DPCreatePage.xaml.cs">
+      <DependentUpon>DPCreatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DPFillinPage.xaml.cs">
+      <DependentUpon>DPFillinPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DPOptionsPage.xaml.cs">
       <DependentUpon>DPOptionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DPViewPage.xaml.cs">
+      <DependentUpon>DPViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>

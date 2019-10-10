@@ -10,5 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)CSUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DatumPrakker.cs" />
   </ItemGroup>
 </Project>

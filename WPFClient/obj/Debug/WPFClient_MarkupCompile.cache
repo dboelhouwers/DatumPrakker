@@ -1,7 +1,7 @@
 ﻿WPFClient
 
 
-winexe
+exe
 C#
 .cs
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\
@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\App.xaml
-41285487824
+71521291113
 
-9-1697445490
+131033938768
 13-1505183044
-MainWindow.xaml;Pages\DPOptionsPage.xaml;Pages\HomePage.xaml;Pages\TestPage2.xaml;
+MainWindow.xaml;Pages\DPCreatePage.xaml;Pages\DPFillinPage.xaml;Pages\DPOptionsPage.xaml;Pages\DPViewPage.xaml;Pages\HomePage.xaml;Pages\TestPage2.xaml;
 
 False
 

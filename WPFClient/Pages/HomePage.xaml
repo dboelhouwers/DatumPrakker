@@ -16,7 +16,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- People list -->
         <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
             <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Choose Username</Label>
         </Border>
