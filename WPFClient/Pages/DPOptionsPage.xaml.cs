@@ -40,7 +40,8 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("[DPOptionsPage] Button View Clicked");
 
-            
+            DPViewPage dpViewPage = new DPViewPage();
+            NavigationService.Navigate(dpViewPage);
 
         }
 

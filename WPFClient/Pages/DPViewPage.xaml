@@ -9,6 +9,61 @@
       Title="DPViewPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="1" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">View DatumPrakker</Label>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="1" Height="35" Padding="5">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Center" Content="Room ID: " Width="75"/>
+                <Label Name="roomID" VerticalAlignment="Center" Width="160"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="2" Height="35" Padding="5">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Center" Content="Name: " Width="75"/>
+                <Label Name="nameTXTBox" VerticalAlignment="Center" Width="160"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Padding="25" >
+                <ListBox>
+                    <ListBoxItem>ListBox Item #1</ListBoxItem>
+                    <ListBoxItem>ListBox Item #2</ListBoxItem>
+                    <ListBoxItem>ListBox Item #3</ListBoxItem>
+                </ListBox>
+            </Border>
+            <Border Grid.Column="1" Padding="25">
+                <Button Width="125"
+                    Height="25" Click="Button_Click">Who can join?</Button>
+            </Border>
+            <Border Grid.Column="2" Padding="25">
+                <ListBox>
+                    <ListBoxItem>ListBox Item #1</ListBoxItem>
+                    <ListBoxItem>ListBox Item #2</ListBoxItem>
+                    <ListBoxItem>ListBox Item #3</ListBoxItem>
+                </ListBox>
+            </Border>
+        </Grid>
+
     </Grid>
+
+  
 </Page>
