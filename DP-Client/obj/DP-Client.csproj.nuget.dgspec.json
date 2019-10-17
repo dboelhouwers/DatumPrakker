@@ -29,11 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj": {
-                "projectPath": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -61,17 +57,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj",
-        "projectName": "WPF-Client",
-        "projectPath": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\WPFClient\\WPF-Client.csproj"
-      },
-      "frameworks": {
-        "net472": {}
       }
     }
   }

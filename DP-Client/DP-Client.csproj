@@ -6,10 +6,10 @@
     <RootNamespace>DP_Client</RootNamespace>
   </PropertyGroup>
 
-  <Import Project="..\ShareClientServer\ShareClientServer.projitems" Label="Shared" />
+  <!--<Import Project="..\ShareClientServer\ShareClientServer.projitems" Label="Shared" />
 
   <ItemGroup>
     <ProjectReference Include="..\WPFClient\WPF-Client.csproj" />
-  </ItemGroup>
+  </ItemGroup>-->
 
 </Project>

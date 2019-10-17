@@ -130,7 +130,8 @@ namespace WPFClient.Pages
                 MessageBox.Show($"DatumPrakker '{nameTXTBox.Text}' created.");
 
                 //TODO 
-                //MainWindow.addDP();// add DatumPrakker 
+                //String id, string name, List<DateTime> chooseableDates
+                MainWindow.addDP(roomGUID, nameTXTBox.Text, dateTimesList);// add DatumPrakker 
                 NavigationService.Navigate(dpOptionPage);
             }
         }

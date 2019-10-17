@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.0": {
       "DP-Server/1.0.0": {
+        "dependencies": {
+          "DPShareCL": "1.0.0"
+        },
         "runtime": {
           "DP-Server.dll": {}
+        }
+      },
+      "DPShareCL/1.0.0": {
+        "runtime": {
+          "DPShareCL.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DP-Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DPShareCL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

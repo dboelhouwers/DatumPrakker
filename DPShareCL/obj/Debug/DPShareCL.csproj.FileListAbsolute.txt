@@ -1,0 +1,5 @@
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DPShareCL\bin\Debug\DPShareCL.dll
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DPShareCL\bin\Debug\DPShareCL.pdb
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DPShareCL\obj\Debug\DPShareCL.dll
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DPShareCL\obj\Debug\DPShareCL.pdb
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DPShareCL\obj\Debug\DPShareCL.csprojAssemblyReference.cache

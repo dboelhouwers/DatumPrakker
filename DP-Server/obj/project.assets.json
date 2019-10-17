@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "DPShareCL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DPShareCL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DPShareCL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DPShareCL/1.0.0": {
+      "type": "project",
+      "path": "../DPShareCL/DPShareCL.csproj",
+      "msbuildProject": "../DPShareCL/DPShareCL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "DPShareCL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\LRSPC\\.nuget\\packages\\": {},
@@ -36,7 +54,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\DPShareCL\\DPShareCL.csproj": {
+              "projectPath": "C:\\Users\\LRSPC\\Documents\\Visual Studio 2019\\Projects\\C# Eindopdracht 2.1 (2019-2020)\\DatumPrakker\\DPShareCL\\DPShareCL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

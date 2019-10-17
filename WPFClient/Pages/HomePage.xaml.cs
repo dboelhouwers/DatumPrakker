@@ -45,8 +45,9 @@ namespace WPFClient.Pages
             else
             {
                 //username = usernameTXTBox.Text;
-                MainWindow.username = usernameTXTBox.Text;
-                Console.Out.WriteLine($"username: {MainWindow.username}");
+                String username = usernameTXTBox.Text;
+                MainWindow.setUsername(username);
+                Console.Out.WriteLine($"username: {username}");
                 DPOptionsPage dpOptionsPage = new DPOptionsPage();
                 this.NavigationService.Navigate(dpOptionsPage);
             }
