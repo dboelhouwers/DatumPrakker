@@ -12,3 +12,17 @@ C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.runtimeconfig.json
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.runtimeconfig.dev.json
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.exe
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.deps.json
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.runtimeconfig.json
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.runtimeconfig.dev.json
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.dll
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DP-Server.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DPShareCL.dll
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\bin\Debug\netcoreapp3.0\DPShareCL.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.csprojAssemblyReference.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.AssemblyInfoInputs.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.AssemblyInfo.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.csproj.CopyComplete
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.dll
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\DP-Server\obj\Debug\netcoreapp3.0\DP-Server.pdb

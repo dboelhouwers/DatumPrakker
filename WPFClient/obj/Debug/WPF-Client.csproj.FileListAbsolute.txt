@@ -27,3 +27,34 @@ C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\WPF-Client.csproj.CopyComplete
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\WPFClient.exe
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\WPFClient.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\bin\Debug\WPFClient.exe.config
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\bin\Debug\WPFClient.exe
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\bin\Debug\WPFClient.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\bin\Debug\DPShareCL.dll
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\bin\Debug\DPShareCL.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPF-Client.csprojAssemblyReference.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\MainWindow.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPCreatePage.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPFillinPage.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPOptionsPage.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPViewPage.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\HomePage.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\TestPage2.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\App.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPFClient_MarkupCompile.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPFClient_MarkupCompile.lref
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\MainWindow.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPCreatePage.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPFillinPage.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPOptionsPage.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPViewPage.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\HomePage.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\TestPage2.baml
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPFClient.g.resources
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPFClient.Properties.Resources.resources
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPF-Client.csproj.GenerateResource.cache
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPF-Client.csproj.CopyComplete
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPFClient.exe
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\WPFClient.pdb
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPFillinLoginPage.g.cs
+D:\Aantekeningen TI J2 M1\C#\DatumPrakker\WPFClient\obj\Debug\Pages\DPFillinLoginPage.baml

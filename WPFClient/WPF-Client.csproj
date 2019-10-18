@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DPFillinLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DPFillinPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,6 +102,9 @@
   <ItemGroup>
     <Compile Include="Pages\DPCreatePage.xaml.cs">
       <DependentUpon>DPCreatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DPFillinLoginPage.xaml.cs">
+      <DependentUpon>DPFillinLoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DPFillinPage.xaml.cs">
       <DependentUpon>DPFillinPage.xaml</DependentUpon>
