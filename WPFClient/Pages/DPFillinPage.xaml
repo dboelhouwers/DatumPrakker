@@ -41,10 +41,7 @@
         <Border Grid.Column="0" Grid.Row="3" Height="auto" Padding="5" Width="500">
             <StackPanel Orientation="Horizontal" Width="235">
                 <Label VerticalAlignment="Center" Content="Dates: " Width="75"/>
-                <StackPanel Margin="10">
-                    <CheckBox Name="Date1" Checked="Date_Check_Handlr" Unchecked="Date_Check_Handlr" >First date</CheckBox>
-                    <CheckBox Name="Date2" Checked="Date_Check_Handlr" Unchecked="Date_Check_Handlr">Second date</CheckBox>
-                </StackPanel>
+                <StackPanel x:Name="stack" Margin="10"/>
             </StackPanel>
         </Border>
 

@@ -21,9 +21,13 @@ namespace WPFClient.Pages
     public partial class DPFillinPage : Page
     {
         private DPOptionsPage dpOptionPage;
+        
         public DPFillinPage(DPOptionsPage dpOptionPage_)
         {
+
+           
             InitializeComponent();
+            addCheckbox("test");
             dpOptionPage = dpOptionPage_;
         }
 
@@ -41,6 +45,16 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("Back");
             NavigationService.Navigate(dpOptionPage);
+        }
+        private void addCheckbox(string date) {
+            this.stack.Children.Add(new CheckBox()
+            {
+                Name = date
+           ,
+                IsChecked = false,
+                Content = date
+            });
+           
         }
 
     }
