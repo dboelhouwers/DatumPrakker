@@ -86,6 +86,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DPViewLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DPViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -111,6 +115,9 @@
     </Compile>
     <Compile Include="Pages\DPOptionsPage.xaml.cs">
       <DependentUpon>DPOptionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DPViewLoginPage.xaml.cs">
+      <DependentUpon>DPViewLoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DPViewPage.xaml.cs">
       <DependentUpon>DPViewPage.xaml</DependentUpon>

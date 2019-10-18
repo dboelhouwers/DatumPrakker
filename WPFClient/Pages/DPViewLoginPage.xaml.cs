@@ -16,12 +16,12 @@ using System.Windows.Shapes;
 namespace WPFClient.Pages
 {
     /// <summary>
-    /// Interaction logic for DPFillinLoginPage.xaml
+    /// Interaction logic for DPViewLoginPage.xaml
     /// </summary>
-    public partial class DPFillinLoginPage : Page
+    public partial class DPViewLoginPage : Page
     {
         private DPOptionsPage dpOptionPage;
-        public DPFillinLoginPage(DPOptionsPage dpOptionPage_)
+        public DPViewLoginPage(DPOptionsPage dpOptionPage_)
         {
             InitializeComponent();
             dpOptionPage = dpOptionPage_;
@@ -30,7 +30,7 @@ namespace WPFClient.Pages
 
         private void Button_Click_Next(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("[FillInLoginPage] Button Next Clicked");
+            Console.WriteLine("[DPViewLoginPage] Button Next Clicked");
 
             if (idTXTBox.Text.Equals(null) || idTXTBox.Text.Equals("") || idTXTBox.Text.Contains(" "))
             {
@@ -41,11 +41,8 @@ namespace WPFClient.Pages
                 //username = usernameTXTBox.Text;
                 String roomID = idTXTBox.Text;
                 Console.Out.WriteLine($"roomID: {roomID}");
-                DPFillinPage dpFillinPage = new DPFillinPage(dpOptionPage, roomID);
-                this.NavigationService.Navigate(dpFillinPage);
+                DPViewPage dpViewPage = new DPViewPage(dpOptionPage, roomID);
+                this.NavigationService.Navigate(DPViewPage);
             }
-
         }
-
-    }
 }

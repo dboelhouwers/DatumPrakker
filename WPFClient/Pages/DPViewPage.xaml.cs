@@ -21,13 +21,10 @@ namespace WPFClient.Pages
     public partial class DPViewPage : Page
     {
         private DPOptionsPage dpOptionPage;
-        public DPViewPage(DPOptionsPage dpOptionPage_)
+        public DPViewPage(DPOptionsPage dpOptionPage_, string roomId)
         {
             InitializeComponent();
-
             addDateToDatesList("13-11-19");
-            
-
             dpOptionPage = dpOptionPage_;
         }
 
@@ -52,6 +49,7 @@ namespace WPFClient.Pages
         private void addPeopleWhoCanJoin(string date, string person)
         {
             //voor die date:
+
             this.listPeopleWhoCanJoin.Items.Add(person);
         }
 

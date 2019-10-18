@@ -22,11 +22,11 @@ namespace WPFClient.Pages
     {
         private DPOptionsPage dpOptionPage;
         
-        public DPFillinPage(DPOptionsPage dpOptionPage_)
+        public DPFillinPage(DPOptionsPage dpOptionPage_, string idRoom)
         {
-
-           
             InitializeComponent();
+
+          //  MainWindow.getDP(idRoom). alle datums die er zijn
             addCheckbox("dit is een datum");
             dpOptionPage = dpOptionPage_;
         }
@@ -53,8 +53,6 @@ namespace WPFClient.Pages
                 IsChecked = false,
                 Content = date
             });
-           
         }
-
     }
 }
