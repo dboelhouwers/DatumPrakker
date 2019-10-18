@@ -26,7 +26,7 @@ namespace WPFClient.Pages
             InitializeComponent();
 
             addDateToDatesList("datelalalla");
-            addPeopleWhoCanJoin("Dinges");
+            
 
             dpOptionPage = dpOptionPage_;
         }
@@ -34,6 +34,7 @@ namespace WPFClient.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("[DPViewPage] Button Show who can join Clicked");
+            addPeopleWhoCanJoin("13-11-19", "Dinges");
         }
 
         // TODO geeft aan de hand van de geselecteerde datum de namen in een lijst rechts 
@@ -48,8 +49,9 @@ namespace WPFClient.Pages
             this.ListWithDates.Items.Add(date);
         }
 
-        private void addPeopleWhoCanJoin(string person)
+        private void addPeopleWhoCanJoin(string date, string person)
         {
+            //voor die date:
             this.listPeopleWhoCanJoin.Items.Add(person);
         }
 
