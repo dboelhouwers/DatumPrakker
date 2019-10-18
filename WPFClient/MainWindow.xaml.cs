@@ -155,7 +155,7 @@ namespace WPFClient
         public static void setUsername(string username_)
         {
             username = username_;
-            CSUtil.SendObject(networkStream, "N^^MLorenzo");
+            CSUtil.SendObject(networkStream, $"N^^M{username_}");
         }
 
 

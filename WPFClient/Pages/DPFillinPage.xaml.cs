@@ -20,9 +20,28 @@ namespace WPFClient.Pages
     /// </summary>
     public partial class DPFillinPage : Page
     {
-        public DPFillinPage()
+        private DPOptionsPage dpOptionPage;
+        public DPFillinPage(DPOptionsPage dpOptionPage_)
         {
             InitializeComponent();
+            dpOptionPage = dpOptionPage_;
         }
+
+        private void Button_Click_Confirm(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("[DPFillinPage] Button Confirm Clicked");
+        }
+
+        private void Date_Check_Handlr(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("[DPFillinPage] Check Changed");
+        }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+            NavigationService.Navigate(dpOptionPage);
+        }
+
     }
 }

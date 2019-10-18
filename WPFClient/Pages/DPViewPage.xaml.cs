@@ -20,9 +20,23 @@ namespace WPFClient.Pages
     /// </summary>
     public partial class DPViewPage : Page
     {
-        public DPViewPage()
+        private DPOptionsPage dpOptionPage;
+        public DPViewPage(DPOptionsPage dpOptionPage_)
         {
             InitializeComponent();
+            dpOptionPage = dpOptionPage_;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("[DPViewPage] Button Show who can join Clicked");
+        }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+            NavigationService.Navigate(dpOptionPage);
+        }
+
     }
 }

@@ -99,20 +99,35 @@ namespace DP
                             Object objUnknown = CSUtil.ByteArrayToObject(byteA);
                             Console.Out.WriteLine($"Object3 type = '{objUnknown.GetType()}'");
 
-                            if (objUnknown.GetType().ToString().Equals("DP.Test"))
+                            //Checks which object it is 
+                            if (objUnknown.GetType().ToString().Equals("DP.Test")) //objUnknown.GetType().Equals(new Type().GetType())
                             {
                                 Test test = (Test)CSUtil.ByteArrayToObject(byteA);
                                 Console.Out.WriteLine($"test3: {test.i}");
+
                             }
                             else if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker"))
                             {
                                 DatumPrakker datumPrakker = (DatumPrakker)CSUtil.ByteArrayToObject(byteA);
+                                
+                                datumPrakkers.Add(datumPrakker);
                                 Console.Out.WriteLine($"DatumPrakker: {datumPrakker}");
+
                             }
                             else if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker+DPAnswer"))
                             {
                                 DatumPrakker.DPAnswer dpAnswer = (DatumPrakker.DPAnswer)CSUtil.ByteArrayToObject(byteA);
+                                
+                                foreach (DatumPrakker p in datumPrakkers)
+                                {
+                                    if (p.id.Equals(dpAnswer.dpID))
+                                    {
+                                        p.answers.Add(dpAnswer);
+                                    }
+                                }
+
                                 Console.Out.WriteLine($"DPAnswer: {dpAnswer}");
+
                             }
                             else if (objUnknown.GetType().ToString().Equals("System.String"))
                             {

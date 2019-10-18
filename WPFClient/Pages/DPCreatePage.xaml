@@ -22,6 +22,10 @@
             <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Create a new DatumPrakker</Label>
         </Border>
 
+        <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5">
+            <Button Width="50" Height="25" Click="Button_Click_Back" HorizontalAlignment="Left" >Back</Button>
+        </Border>
+
         <Border Grid.Column="0" Grid.Row="1" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">
                 <Label VerticalAlignment="Center" Content="Room ID: " Width="75"/>

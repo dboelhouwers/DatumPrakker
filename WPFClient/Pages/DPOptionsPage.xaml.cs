@@ -31,7 +31,7 @@ namespace WPFClient.Pages
             //this.NavigationService.Navigate(testPage2);
             Console.WriteLine("[DPOptionsPage] Button Create Clicked");
 
-            DPCreatePage dpCreatePage = new DPCreatePage(this); 
+            DPCreatePage dpCreatePage = new DPCreatePage(this);
             NavigationService.Navigate(dpCreatePage);
 
         }
@@ -39,14 +39,15 @@ namespace WPFClient.Pages
         private void Button_Click_View(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("[DPOptionsPage] Button View Clicked");
-
+            DPViewPage dpViewPage = new DPViewPage(this);
+            NavigationService.Navigate(dpViewPage);
         }
 
         private void Button_Click_FillIn(object sender, RoutedEventArgs e)
         {
-
             Console.WriteLine("[DPOptionsPage] Button Fill in Clicked");
-
+            DPFillinPage dpfillinPage = new DPFillinPage(this);
+            NavigationService.Navigate(dpfillinPage);
         }
     }
 }
