@@ -49,8 +49,7 @@ namespace WPFClient.Pages
         private void addCheckbox(string date) {
             this.stack.Children.Add(new CheckBox()
             {
-                Name = date
-           ,
+                Name = date,
                 IsChecked = false,
                 Content = date
             });

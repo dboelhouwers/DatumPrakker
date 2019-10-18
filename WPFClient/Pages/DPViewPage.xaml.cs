@@ -25,7 +25,7 @@ namespace WPFClient.Pages
         {
             InitializeComponent();
 
-            addDateToDatesList("datelalalla");
+            addDateToDatesList("13-11-19");
             
 
             dpOptionPage = dpOptionPage_;
