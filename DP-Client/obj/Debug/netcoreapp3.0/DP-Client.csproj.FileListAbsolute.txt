@@ -1,15 +1,2 @@
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\DP-Client.exe
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\DP-Client.deps.json
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\DP-Client.runtimeconfig.json
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\DP-Client.runtimeconfig.dev.json
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\DP-Client.dll
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\DP-Client.pdb
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\WPFClient.exe
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\WPFClient.exe.config
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\obj\Debug\netcoreapp3.0\DP-Client.csprojAssemblyReference.cache
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\obj\Debug\netcoreapp3.0\DP-Client.AssemblyInfoInputs.cache
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\obj\Debug\netcoreapp3.0\DP-Client.AssemblyInfo.cs
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\obj\Debug\netcoreapp3.0\DP-Client.csproj.CopyComplete
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\obj\Debug\netcoreapp3.0\DP-Client.dll
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\obj\Debug\netcoreapp3.0\DP-Client.pdb
-C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\DP-Client\bin\Debug\netcoreapp3.0\WPFClient.pdb

@@ -142,6 +142,11 @@
   <ItemGroup>
     <Folder Include="Img\" />
   </ItemGroup>
-  <Import Project="..\ShareClientServer\ShareClientServer.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\DPShareCL\DPShareCL.csproj">
+      <Project>{48d3d2a4-492a-46d3-822d-d66a94eed2bd}</Project>
+      <Name>DPShareCL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

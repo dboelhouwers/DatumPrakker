@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿WPFClient
 
 
@@ -18,3 +19,25 @@ MainWindow.xaml;Pages\DPCreatePage.xaml;Pages\DPFillinPage.xaml;Pages\DPOptionsP
 
 False
 
+=======
+﻿WPFClient
+
+
+exe
+C#
+.cs
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\obj\Debug\
+WPFClient
+none
+false
+DEBUG;TRACE
+C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\App.xaml
+71521291113
+
+11906010102
+14-1568821448
+MainWindow.xaml;Pages\DPCreatePage.xaml;Pages\DPFillinPage.xaml;Pages\DPOptionsPage.xaml;Pages\DPViewPage.xaml;Pages\HomePage.xaml;Pages\TestPage2.xaml;
+
+False
+
+>>>>>>> master

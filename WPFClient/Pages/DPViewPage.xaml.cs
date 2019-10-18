@@ -20,9 +20,11 @@ namespace WPFClient.Pages
     /// </summary>
     public partial class DPViewPage : Page
     {
-        public DPViewPage()
+        private DPOptionsPage dpOptionPage;
+        public DPViewPage(DPOptionsPage dpOptionPage_)
         {
             InitializeComponent();
+<<<<<<< HEAD
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,5 +39,22 @@ namespace WPFClient.Pages
             NavigationService.Navigate(dpOptionsPage);
         }
         //Gaat terug naar de vorige pagina
+=======
+            dpOptionPage = dpOptionPage_;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("[DPViewPage] Button Show who can join Clicked");
+        }
+
+        // TODO geeft aan de hand van de geselecteerde datum de namen in een lijst rechts 
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+            NavigationService.Navigate(dpOptionPage);
+        }
+
+>>>>>>> master
     }
 }

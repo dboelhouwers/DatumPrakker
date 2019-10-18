@@ -23,10 +23,10 @@ namespace WPFClient.Pages
         private DPOptionsPage dpOptionPage;
         private List<DateTime> dateTimesList;
         private String roomGUID;
-        public DPCreatePage(DPOptionsPage dpOptionPage)// ref/out 
+        public DPCreatePage(DPOptionsPage dpOptionPage_)// ref/out 
         {
             InitializeComponent();
-            this.dpOptionPage = dpOptionPage;
+            dpOptionPage = dpOptionPage_;
             dateTimesList = new List<DateTime>();
             roomID.Content = roomGUID = Guid.NewGuid().ToString().ToUpper().Replace("-", "").Substring(0, 6);
             datePicker.BlackoutDates.Add(
@@ -130,9 +130,16 @@ namespace WPFClient.Pages
                 MessageBox.Show($"DatumPrakker '{nameTXTBox.Text}' created.");
 
                 //TODO 
-                //MainWindow.addDP();// add DatumPrakker 
+                //String id, string name, List<DateTime> chooseableDates
+                MainWindow.addDP(roomGUID, nameTXTBox.Text, dateTimesList);// add DatumPrakker 
                 NavigationService.Navigate(dpOptionPage);
             }
+        }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Back");
+            NavigationService.Navigate(dpOptionPage);
         }
 
         //private class CustomDateTime

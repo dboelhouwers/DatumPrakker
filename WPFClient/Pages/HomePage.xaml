@@ -27,7 +27,7 @@
         </Border>
         <Border Grid.Column="0" Grid.Row="2" Height="35" Padding="5">
             <Button Width="125"
-                    Height="25" Click="Button_Click_Next">Create</Button>
+                    Height="25" Click="Button_Click_Next">Next</Button>
         </Border>
         <!--<ListBox Name="optionsListBox" Grid.Column="0" Grid.Row="1">
             <ListBoxItem>Mike</ListBoxItem>
