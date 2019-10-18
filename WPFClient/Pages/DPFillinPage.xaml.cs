@@ -27,7 +27,7 @@ namespace WPFClient.Pages
 
            
             InitializeComponent();
-            addCheckbox("test");
+            addCheckbox("dit is een datum");
             dpOptionPage = dpOptionPage_;
         }
 

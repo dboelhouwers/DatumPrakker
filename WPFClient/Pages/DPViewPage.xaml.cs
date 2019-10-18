@@ -24,6 +24,10 @@ namespace WPFClient.Pages
         public DPViewPage(DPOptionsPage dpOptionPage_)
         {
             InitializeComponent();
+
+            addDateToDatesList("datelalalla");
+            addPeopleWhoCanJoin("Dinges");
+
             dpOptionPage = dpOptionPage_;
         }
 
@@ -37,6 +41,16 @@ namespace WPFClient.Pages
         {
             Console.WriteLine("Back");
             NavigationService.Navigate(dpOptionPage);
+        }
+
+        private void addDateToDatesList(string date)
+        {
+            this.ListWithDates.Items.Add(date);
+        }
+
+        private void addPeopleWhoCanJoin(string person)
+        {
+            this.listPeopleWhoCanJoin.Items.Add(person);
         }
 
     }
