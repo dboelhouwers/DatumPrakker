@@ -25,6 +25,7 @@ namespace WPFClient.Pages
         {
             InitializeComponent();
             dpOptionPage = dpOptionPage_;
+
         }
 
         private void Button_Click_Confirm(object sender, RoutedEventArgs e)
