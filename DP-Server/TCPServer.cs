@@ -3,43 +3,27 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.InteropServices;
 using System.Threading;
+using System.Threading.Tasks;
+using DP_Server;
 
 namespace DP
 {
     class TCPServer
     {
-        //Init datumprikker from fileIO first and than add with an add method 
-        public static List<DatumPrakker> datumPrakkers;
+        public static List<DatumPrakker> datumPrakkers { get; set; }
         static void Main(string[] args)
         {
+            datumPrakkers = FileIO.ReadDPs();
+            //Console.Out.WriteLine(datumPrakkers[1]);
 
-            datumPrakkers = new List<DatumPrakker>();
-            new TCPServer();
-            //List<DateTime> dates = new List<DateTime>()
-            //{
-            //    new DateTime(2019, 10, 26),
-            //    new DateTime(2019, 10, 27)
-            //};
-
-
-            //DatumPrakker d = new DatumPrakker("Lorenzo's Datumprikker", "Lorenzo", dates);
-            //d.answers.Add(new DatumPrakker.DPAnswer("Marleen", new List<DateTime>()
-            //{
-            //    new DateTime(2019, 10, 26),
-            //    new DateTime(2019, 10, 27)
-            //}));
-            //d.answers.Add(new DatumPrakker.DPAnswer("Daphne", new List<DateTime>()
-            //{
-            //    new DateTime(2019, 10, 26)
-            //}));
-
-            //Console.WriteLine(d.ToString());
+            new TCPServer().TCPServerInit();
 
         }
 
 
-        public TCPServer()
+        public async void TCPServerInit()
         {
             #region Server Init 
             IPAddress localhost; //= IPAddress.Parse("127.0.0.1");
@@ -70,14 +54,17 @@ namespace DP
                 //AcceptTcpClient waits for a connection from the client
                 TcpClient user = listener.AcceptTcpClient();
                 Console.WriteLine($"Accepted user at {DateTime.Now}");
+                //Task<TcpClient> user = listener.AcceptTcpClientAsync();
+                //TcpClient tcpClient = await user;
 
-
-                Thread thread = new Thread(HandleClientThread);
-                thread.Start(user);
+                //Thread thread = new Thread(HandleClientThread);
+                //thread.Start(user);
+                new Thread(async () => await HandleClientThread(user)).Start();
+                
             }
         }
 
-        static void HandleClientThread(object obj)
+        static async Task HandleClientThread(object obj)
         {
             TcpClient client = obj as TcpClient;
             NetworkStream networkStream = client.GetStream();
@@ -103,17 +90,12 @@ namespace DP
                             Console.Out.WriteLine($"Object3 type = '{objUnknown.GetType()}'");
 
                             //Checks which object it is 
-                            if (objUnknown.GetType().ToString().Equals("DP.Test")) //objUnknown.GetType().Equals(new Type().GetType())
-                            {
-                                Test test = (Test)CSUtil.ByteArrayToObject(byteA);
-                                Console.Out.WriteLine($"test3: {test.i}");
-
-                            }
-                            else if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker"))
+                            if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker"))
                             {
                                 DatumPrakker datumPrakker = (DatumPrakker)CSUtil.ByteArrayToObject(byteA);
 
                                 datumPrakkers.Add(datumPrakker);
+                                FileIO.WriteDPs();
                                 Console.Out.WriteLine($"DatumPrakker: {datumPrakker}");
 
                             }
@@ -126,6 +108,7 @@ namespace DP
                                     if (p.id.Equals(dpAnswer.dpID))
                                     {
                                         p.answers.Add(dpAnswer);
+                                        FileIO.WriteDPs();
                                     }
                                 }
 
@@ -153,8 +136,6 @@ namespace DP
                                     //CSUtil.SendMessage(networkStream, "OK Name");
                                     networkStream.Flush();
 
-                                    //networkStream.Close();
-                                    //networkStream = null;
                                 }
                                 else if (s.StartsWith("GETDP"))
                                 {
@@ -189,44 +170,7 @@ namespace DP
                             }
 
                         }
-
-                        //Console.Out.WriteLine($"Test i: {test.i}");
-                        ////CSUtil.Message obj = CSUtil.ReadObject(networkStream);
-                        //DatumPrakker dp = CSUtil.readDP(client);
-                        //Console.Out.WriteLine($"Name: {dp.name}");
-                        ////Console.Out.WriteLine(received.GetType().ToString());
-                        ////Console.WriteLine($"Received: {received} from {cTcpClient.userName}");
                     }
-
-                    //done = false;
-                    //if (done)
-                    //{
-                    //    Console.WriteLine("done=1");
-                    //    //Console.WriteLine($"TEST: {streamReader.ReadToEnd()}");
-                    //    CSUtil.SendMessage(networkStream, "BYE");
-                    //    Console.WriteLine("sended BYE");
-                    //}
-                    //else
-                    //{
-                    //if (received.GetType().ToString() == "String")
-                    //{
-                    //    received = (String)received as String;
-                    //    String s = (String) received;
-                    //    if (s.StartsWith("N^^M"))
-                    //    {
-                    //        cTcpClient.userName = s.Remove(0, 4);
-                    //        Console.WriteLine($"Accepted {cTcpClient.userName}");
-                    //        CSUtil.SendMessage(networkStream, "OK Name");
-                    //        networkStream.Flush();
-
-                    //        //networkStream.Close();
-                    //        //networkStream = null;
-                    //    }
-                    //    else
-                    //    {
-                    //        Console.Out.WriteLine(s);
-                    //    }
-
                 }
             }
             catch (IOException e)
@@ -246,6 +190,8 @@ namespace DP
         }
     }
 
+
+
     public class CTcpClient
     {
         public string userName { get; set; }
@@ -262,6 +208,7 @@ namespace DP
             Console.Out.WriteLine($"Closed connection with {userName}");
         }
     }
+
 
     public static class Generate
     {

@@ -130,27 +130,6 @@ namespace DP
             {
                 Console.WriteLine("Message is empty");
             }
-
-            //BinaryFormatter bf = new BinaryFormatter();
-            //byte[] testBytes;
-            //long size = 0;
-            //using (var ms = new MemoryStream())
-            //{
-            //    bf.Serialize(ms, test);
-            //    testBytes = ms.ToArray();
-            //    size = ms.Length;
-            //}
-
-            //byte[] prefixSend = BitConverter.GetBytes(size);
-            //byte[] bytesSend = testBytes;
-            //byte[] bufferSend = new byte[prefixSend.Length + bytesSend.Length];
-
-            //prefixSend.CopyTo(bufferSend, 0);
-            //bytesSend.CopyTo(bufferSend, prefixSend.Length);
-
-            //networkStream.Write(bufferSend, 0, bufferSend.Length);
-            ////Console.WriteLine("Time: " + DateTime.Now);
-            //networkStream.Flush();
         }
 
         public static Byte[] ReadObject(NetworkStream networkStream)

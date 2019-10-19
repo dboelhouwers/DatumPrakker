@@ -96,12 +96,7 @@ namespace WPFClient
                         Object objUnknown = CSUtil.ByteArrayToObject(byteA);
                         Console.Out.WriteLine($"Object3 type = '{objUnknown.GetType()}'");
 
-                        if (objUnknown.GetType().ToString().Equals("DP.Test"))
-                        {
-                            Test test = (Test)CSUtil.ByteArrayToObject(byteA);
-                            Console.Out.WriteLine($"test3: {test.i}");
-                        }
-                        else if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker"))
+                        if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker"))
                         {
                             DatumPrakker datumPrakker = (DatumPrakker)CSUtil.ByteArrayToObject(byteA);
                             Console.Out.WriteLine($"DatumPrakker: {datumPrakker}");

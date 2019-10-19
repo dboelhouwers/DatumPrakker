@@ -4,22 +4,6 @@ using System.Text;
 
 namespace DP
 {
-
-    [Serializable]
-    public class Test
-    {
-        public int i { get; set; }
-        public Test()
-        {
-
-        }
-
-        public Test(int a)
-        {
-            i = a;
-        }
-    }
-
     [Serializable]
     public class DatumPrakker
     {
@@ -44,11 +28,6 @@ namespace DP
         {
 
         }
-
-        //public void addDPAnswer(DPAnswer answer)
-        //{
-        //    answers.Add(answer);
-        //}
 
         [Serializable]
         public class DPAnswer
