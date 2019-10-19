@@ -10,6 +10,7 @@
         SizeToContent="WidthAndHeight">
 
     <Grid>
-        <Frame Name="MainFrame" Source="Pages/HomePage.xaml"/>
+        <Frame Name="MainFrame" />
+        <!--Source="Pages/HomePage.xaml"-->
     </Grid>
 </Window>

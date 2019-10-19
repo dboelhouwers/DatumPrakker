@@ -20,6 +20,7 @@ namespace WPFClient.Pages
     /// </summary>
     public partial class HomePage : Page
     {
+        public DPOptionsPage dpOptionsPage { get; set; }
         //private String username;
         public HomePage()
         {
@@ -48,7 +49,7 @@ namespace WPFClient.Pages
                 String username = usernameTXTBox.Text;
                 MainWindow.setUsername(username);
                 Console.Out.WriteLine($"username: {username}");
-                DPOptionsPage dpOptionsPage = new DPOptionsPage();
+                dpOptionsPage = new DPOptionsPage();
                 this.NavigationService.Navigate(dpOptionsPage);
             }
 

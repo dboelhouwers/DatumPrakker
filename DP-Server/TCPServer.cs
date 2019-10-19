@@ -13,6 +13,8 @@ namespace DP
         public static List<DatumPrakker> datumPrakkers;
         static void Main(string[] args)
         {
+
+            datumPrakkers = new List<DatumPrakker>();
             new TCPServer();
             //List<DateTime> dates = new List<DateTime>()
             //{
@@ -86,6 +88,7 @@ namespace DP
             {
                 while (!done) //&& client.Connected
                 {
+
                     //Console.Out.WriteLine("while");
                     if (networkStream.DataAvailable)
                     {
@@ -109,7 +112,7 @@ namespace DP
                             else if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker"))
                             {
                                 DatumPrakker datumPrakker = (DatumPrakker)CSUtil.ByteArrayToObject(byteA);
-                                
+
                                 datumPrakkers.Add(datumPrakker);
                                 Console.Out.WriteLine($"DatumPrakker: {datumPrakker}");
 
@@ -117,7 +120,7 @@ namespace DP
                             else if (objUnknown.GetType().ToString().Equals("DP.DatumPrakker+DPAnswer"))
                             {
                                 DatumPrakker.DPAnswer dpAnswer = (DatumPrakker.DPAnswer)CSUtil.ByteArrayToObject(byteA);
-                                
+
                                 foreach (DatumPrakker p in datumPrakkers)
                                 {
                                     if (p.id.Equals(dpAnswer.dpID))
@@ -134,7 +137,16 @@ namespace DP
                                 String s = (String)CSUtil.ByteArrayToObject(byteA);
                                 Console.Out.WriteLine($"String: {s}");
 
-                                if (s.StartsWith("N^^M"))
+                                if (s.StartsWith("bye"))
+                                {
+                                    networkStream = null;
+                                    client.Close();
+                                    Console.WriteLine($"client.Connected: {client.Connected}");
+                                    Console.WriteLine($"client '{cTcpClient.userName}' Disconnected");
+                                    done = true;
+                                    break;
+                                }
+                                else if (s.StartsWith("N^^M"))
                                 {
                                     cTcpClient.userName = s.Remove(0, 4);
                                     Console.WriteLine($"Accepted {cTcpClient.userName}");
@@ -147,12 +159,23 @@ namespace DP
                                 else if (s.StartsWith("GETDP"))
                                 {
                                     String dpID = s.Remove(0, 5);
+                                    bool found = false;
+
+                                    Console.Out.WriteLine($"getDP {dpID}");
+
                                     foreach (DatumPrakker dp in datumPrakkers)
                                     {
                                         if (dp.id.Equals(dpID))
                                         {
+                                            found = true;
                                             CSUtil.SendObject(networkStream, dp);
+                                            Console.Out.WriteLine($"DP '{dpID}' sended to {cTcpClient.userName}");
                                         }
+                                    }
+
+                                    if (!found)
+                                    {
+                                        CSUtil.SendObject(networkStream, "DPGET-NOTFOUND");
                                     }
                                 }
                                 else
@@ -204,37 +227,6 @@ namespace DP
                     //        Console.Out.WriteLine(s);
                     //    }
 
-                    //} else if (received.GetType().ToString() == "DatumPrakker")
-                    //{
-                    //    DatumPrakker dp = (DatumPrakker)received;
-                    //    Console.Out.WriteLine(dp);
-
-                    //}
-
-                    //Name verification 
-
-                    //else if (received.StartsWith("DP-O"))
-                    //{
-                    //    String s = received.Remove(0, 4);
-                    //    Console.WriteLine($"Received Datumprakker: {s}");
-                    //    CSUtil.SendMessage(networkStream, "OK DatumPrakker Object");
-                    //    networkStream.Flush();
-
-                    //}
-                    //else if (received.StartsWith("DP-A"))
-                    //{
-
-                    //}
-                    //else if (received.StartsWith("DP-G"))
-                    //{
-
-                    //}
-                    //else
-                    //{
-                    //    CSUtil.SendMessage(networkStream, "OK");
-                    //    Console.WriteLine("sended OK");
-                    //}
-                    //}
                 }
             }
             catch (IOException e)
@@ -267,6 +259,7 @@ namespace DP
         public void Close()
         {
             tcpClient.Close();
+            Console.Out.WriteLine($"Closed connection with {userName}");
         }
     }
 

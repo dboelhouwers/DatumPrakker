@@ -20,6 +20,7 @@ namespace WPFClient.Pages
     /// </summary>
     public partial class DPOptionsPage : Page
     {
+        public DPChooseDPID dpChooseDpid { get; set; }
         public DPOptionsPage()
         {
             InitializeComponent();
@@ -36,18 +37,18 @@ namespace WPFClient.Pages
 
         }
 
-        private void Button_Click_View(object sender, RoutedEventArgs e)
-        {
-            Console.WriteLine("[DPOptionsPage] Button View Clicked");
-            DPViewPage dpViewPage = new DPViewPage(this);
-            NavigationService.Navigate(dpViewPage);
-        }
-
         private void Button_Click_FillIn(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("[DPOptionsPage] Button Fill in Clicked");
-            DPFillinPage dpfillinPage = new DPFillinPage(this);
-            NavigationService.Navigate(dpfillinPage);
+            dpChooseDpid = new DPChooseDPID(this, new DPFillinPage(this));
+            NavigationService.Navigate(dpChooseDpid);
+        }
+
+        private void Button_Click_View(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("[DPOptionsPage] Button View Clicked");
+            dpChooseDpid = new DPChooseDPID(this, new DPViewPage(this));
+            NavigationService.Navigate(dpChooseDpid);
         }
     }
 }

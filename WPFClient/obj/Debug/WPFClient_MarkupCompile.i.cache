@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\LRSPC\Documents\Visual Studio 2019\Projects\C# Eindopdracht 2.1 (2019-2020)\DatumPrakker\WPFClient\App.xaml
-71521291113
+8-1853380965
 
-12-527905870
+13-578228649
 14-1568821448
-MainWindow.xaml;Pages\DPCreatePage.xaml;Pages\DPFillinPage.xaml;Pages\DPOptionsPage.xaml;Pages\DPViewPage.xaml;Pages\HomePage.xaml;Pages\TestPage2.xaml;
+MainWindow.xaml;Pages\DPChooseDPID.xaml;Pages\DPCreatePage.xaml;Pages\DPFillinPage.xaml;Pages\DPOptionsPage.xaml;Pages\DPViewPage.xaml;Pages\HomePage.xaml;Pages\TestPage2.xaml;
 
-True
+False
 

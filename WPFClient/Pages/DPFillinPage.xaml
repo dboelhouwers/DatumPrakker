@@ -5,11 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFClient.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="350" d:DesignWidth="500"
       Title="DPFillinPage">
 
-    <Grid VerticalAlignment="Top" HorizontalAlignment="Center" ShowGridLines="True" Height="350" Width="500" Margin="0" Background="White">
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Center" ShowGridLines="False" Height="350" Width="500" Margin="0" Background="White">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -18,7 +19,7 @@
 
         </Grid.RowDefinitions>
         <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
-            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Fill in a DatumPrakker</Label>
+            <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">Fill in the DatumPrakker</Label>
         </Border>
 
         <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5">
@@ -27,32 +28,46 @@
 
         <Border Grid.Column="0" Grid.Row="1" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">
-                <Label VerticalAlignment="Center" Content="Room ID: " Width="75"/>
-                <Label Name="roomID" VerticalAlignment="Center" Width="160"/>
+                <Label VerticalAlignment="Center" Content="DP ID: " Width="75"/>
+                <Label Name="dpID" VerticalAlignment="Center" Width="160"/>
             </StackPanel>
         </Border>
 
         <Border Grid.Column="0" Grid.Row="2" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">
                 <Label VerticalAlignment="Center" Content="Name: " Width="75"/>
-                <Label Name="nameTXTBox" VerticalAlignment="Center" Width="160"/>
-            </StackPanel>
-        </Border>
-        <Border Grid.Column="0" Grid.Row="3" Height="auto" Padding="5" Width="500">
-            <StackPanel Orientation="Horizontal" Width="235">
-                <Label VerticalAlignment="Center" Content="Dates: " Width="75"/>
-                <StackPanel Margin="10">
-                    <CheckBox Name="Date1" Checked="Date_Check_Handlr" Unchecked="Date_Check_Handlr" >First date</CheckBox>
-                    <CheckBox Name="Date2" Checked="Date_Check_Handlr" Unchecked="Date_Check_Handlr">Second date</CheckBox>
-                </StackPanel>
+                <Label Name="nameLabel" VerticalAlignment="Center" Width="160"/>
             </StackPanel>
         </Border>
 
-        <Border Grid.Column="0" Grid.Row="4"  Height="35" Width="235" Padding="5">
+        <Border Grid.Column="0" Grid.Row="3" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">
-                <Button Width="225"
-                    Height="25" Click="Button_Click_Confirm" Margin="0,0,0,0.6">Confirm</Button>
+                <Label VerticalAlignment="Center" Content="Created By: " Width="75"/>
+                <Label Name="createdByLabel" VerticalAlignment="Center" Width="160"/>
             </StackPanel>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="4" Padding="5" MaxHeight="165" Width="500">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Top" Width="75">Dates:</Label>
+                <ScrollViewer Width="160" VerticalScrollBarVisibility="Visible">
+                    <StackPanel Name="datesPanel" Orientation="Vertical" Width="140" Background="LightGray">
+                        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Label HorizontalAlignment="Right" Width="75">10/21/2019</Label>
+                        -->
+                        <!--<Button Click="Button_Click_DeleteDate" Background="Red" Height="20" Width="20">X</Button>-->
+                        <!--
+                        <CheckBox HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5, 2"></CheckBox>
+                    </StackPanel>-->
+                    </StackPanel>
+                </ScrollViewer>
+
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="5" Height="35" Width="235" Padding="5">
+            <Button Width="85"
+                    Height="25" Click="Button_Click_Confirm">Create</Button>
         </Border>
 
     </Grid>

@@ -54,8 +54,8 @@ namespace DP
         public class DPAnswer
         {
             public String dpID { get; }
-            private String username { get; }
-            private List<DateTime> choosenDates { get; }
+            public String username { get; }
+            public List<DateTime> choosenDates { get; }
 
             public DPAnswer(string DP_ID, string DPA_username, List<DateTime> DPA_choosenDates)
             {

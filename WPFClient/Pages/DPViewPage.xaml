@@ -5,10 +5,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WPFClient.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="350" d:DesignWidth="500"
       Title="DPViewPage">
 
-    <Grid VerticalAlignment="Top" HorizontalAlignment="Center" ShowGridLines="True" Height="350" Width="500" Margin="0" Background="White">
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Center" ShowGridLines="False" Height="350" Width="500" Margin="0" Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -18,7 +18,7 @@
 
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="1" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
+        <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
             <Label VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White">View DatumPrakker</Label>
         </Border>
 
@@ -26,45 +26,64 @@
             <Button Width="50" Height="25" Click="Button_Click_Back" HorizontalAlignment="Left" >Back</Button>
         </Border>
 
-        <Border Grid.Column="1" Grid.Row="1" Height="35" Padding="5">
+        <Border Grid.Column="0" Grid.Row="1" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">
-                <Label VerticalAlignment="Center" Content="Room ID: " Width="75"/>
-                <Label Name="roomID" VerticalAlignment="Center" Width="160"/>
+                <Label VerticalAlignment="Center" Content="DP ID: " Width="75"/>
+                <Label Name="dpID" VerticalAlignment="Center" Width="160"/>
             </StackPanel>
         </Border>
 
-        <Border Grid.Column="1" Grid.Row="2" Height="35" Padding="5">
+        <Border Grid.Column="0" Grid.Row="2" Height="35" Padding="5">
             <StackPanel Orientation="Horizontal" Width="235">
                 <Label VerticalAlignment="Center" Content="Name: " Width="75"/>
-                <Label Name="nameTXTBox" VerticalAlignment="Center" Width="160"/>
+                <Label Name="nameLabel" VerticalAlignment="Center" Width="160"/>
             </StackPanel>
         </Border>
 
-        <Grid Grid.Row="3">
+        <Border Grid.Column="0" Grid.Row="3" Height="35" Padding="5">
+            <StackPanel Orientation="Horizontal" Width="235">
+                <Label VerticalAlignment="Center" Content="Created By: " Width="75"/>
+                <Label Name="createdByLabel" VerticalAlignment="Center" Width="160"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Column="0" Grid.Row="4" Height="200" Width="500" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="240"/>
             </Grid.ColumnDefinitions>
 
-            <Border Grid.Column="0" Padding="25" >
-                <ListBox>
-                    <ListBoxItem>ListBox Item #1</ListBoxItem>
-                    <ListBoxItem>ListBox Item #2</ListBoxItem>
-                    <ListBoxItem>ListBox Item #3</ListBoxItem>
-                </ListBox>
+            <Border Grid.Column="0" Grid.Row="0" Height="200" Padding="5" VerticalAlignment="Top" >
+                <StackPanel Orientation="Vertical" Width="240" >
+                    <Label VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Select Date:" Height="25" Width="75"/>
+                    <ComboBox Name="dateComboBox" Width="150" HorizontalContentAlignment="Center" MaxHeight="165" SelectionChanged="CB_Date_Changed">
+                        <!--<ComboBoxItem>ComboBox Item #1</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
+                        <ComboBoxItem>ComboBox Item #3</ComboBoxItem>-->
+                    </ComboBox>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Grid.Row="0" Height="200" Padding="5" VerticalAlignment="Top" >
+                <StackPanel Orientation="Vertical" Width="230" >
+                    <Label VerticalAlignment="Center" HorizontalContentAlignment="Center" Content="Available People: " Height="25" Width="125"/>
+                    <ScrollViewer Width="230" VerticalScrollBarVisibility="Visible">
+                        <StackPanel Name="AvailablePeopleStackPanel" Orientation="Vertical" Width="220" Height="165">
+                            <!--<Label Height="25" Width="220" Content="Lorenzo" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+                            <Label Height="25" Width="220" Content="Lorenzo" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>-->
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+            <!--<Border Grid.Column="0" Padding="25" >
+                <ListBox x:Name="ListWithDates"/>
             </Border>
             <Border Grid.Column="1" Padding="25">
-                <Button Width="125"
-                    Height="25" Click="Button_Click">Who can join?</Button>
+                
             </Border>
             <Border Grid.Column="2" Padding="25">
-                <ListBox>
-                    <ListBoxItem>ListBox Item #1</ListBoxItem>
-                    <ListBoxItem>ListBox Item #2</ListBoxItem>
-                    <ListBoxItem>ListBox Item #3</ListBoxItem>
-                </ListBox>
-            </Border>
+                <ListBox x:Name="listPeopleWhoCanJoin"/>
+            </Border>-->
         </Grid>
     </Grid>
 </Page>

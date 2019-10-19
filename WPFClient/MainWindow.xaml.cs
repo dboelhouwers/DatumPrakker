@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Navigation;
 using DP;
+using WPFClient.Pages;
 
 
 namespace WPFClient
@@ -17,9 +18,11 @@ namespace WPFClient
     {
         private static String username { get; set; }
         private static NetworkStream networkStream;
+        private HomePage homepage;
         public MainWindow()
         {
             InitializeComponent();
+
             InitWindow();
 
 
@@ -32,6 +35,10 @@ namespace WPFClient
 
         private void InitWindow()
         {
+            homepage = new HomePage();
+            MainWindow objMainWindows = (MainWindow)Window.GetWindow(this);
+            objMainWindows.MainFrame.Navigate(homepage);
+
             //MainFrame.ShowsNavigationUI = false; // Used for NavigationWindow 
             MainFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
 
@@ -58,6 +65,7 @@ namespace WPFClient
             networkStream = client.GetStream();
 
             bool done = false;
+
 
 
             //while (username == null)
@@ -97,6 +105,21 @@ namespace WPFClient
                         {
                             DatumPrakker datumPrakker = (DatumPrakker)CSUtil.ByteArrayToObject(byteA);
                             Console.Out.WriteLine($"DatumPrakker: {datumPrakker}");
+
+                            //homepage.dpOptionsPage.dpChooseDpid.received = true;
+                            homepage.dpOptionsPage.dpChooseDpid.receivedObject = datumPrakker;
+                        }
+                        else if (objUnknown.GetType().ToString().Equals("System.String"))
+                        {
+                            String s = (String)CSUtil.ByteArrayToObject(byteA);
+                            Console.Out.WriteLine($"String: {s}");
+
+                            if (s.Contains("DPGET-NOTFOUND"))
+                            {
+                                //homepage.dpOptionsPage.dpChooseDpid.received = true;
+                                homepage.dpOptionsPage.dpChooseDpid.receivedObject = "NOTFOUND";
+
+                            }
                         }
                         else
                         {
@@ -144,6 +167,7 @@ namespace WPFClient
         public static void getDP(String id)
         {
             CSUtil.SendObject(networkStream, $"GETDP{id}");
+
         }
 
         public static void addDPAnswer(String dp_id, string username, List<DateTime> answers)
@@ -158,7 +182,16 @@ namespace WPFClient
             CSUtil.SendObject(networkStream, $"N^^M{username_}");
         }
 
+        public static String getUsername()
+        {
+            return username;
+        }
 
 
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            CSUtil.SendObject(networkStream, "bye");
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace WPFClient.Pages
             InitializeComponent();
             dpOptionPage = dpOptionPage_;
             dateTimesList = new List<DateTime>();
-            roomID.Content = roomGUID = Guid.NewGuid().ToString().ToUpper().Replace("-", "").Substring(0, 6);
+            dpID.Content = roomGUID = Guid.NewGuid().ToString().ToUpper().Replace("-", "").Substring(0, 6);
             datePicker.BlackoutDates.Add(
                 new CalendarDateRange(new DateTime(1500, 1, 1), DateTime.Today.AddDays(-1)));
 
